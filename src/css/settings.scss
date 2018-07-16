@@ -1,0 +1,84 @@
+@charset 'utf-8';
+@import url("https://d1azc1qln24ryf.cloudfront.net/114779/Socicon/style-cf.css?u8vidh");
+@import url("https://fonts.googleapis.com/css?family=Dancing+Script:400,700|Oxygen:400,700|Raleway:400,700,900|Rufina:400,700");
+@font-face {
+	font-family: 'Dancing Script';
+	src: url('https://fonts.googleapis.com/css?family=Dancing+Script:400,700');
+}
+@font-face {
+	font-family: 'Oxygen';
+	src: url('https://fonts.googleapis.com/css?family=Oxygen:400,700');
+}
+@font-face {
+	font-family: 'Raleway';
+	src: url('https://fonts.googleapis.com/css?family=Raleway:400,700,900');
+}
+@font-face {
+	font-family: 'Rufina';
+	src: url('https://fonts.googleapis.com/css?family=Rufina:400,700');
+}
+
+%ul {
+	list-style: none;
+	margin:0;
+	padding:0;
+}
+%wrapper {
+	max-width: 1170px;
+	padding: 0 15px;
+	margin: 0 auto;
+}
+.wrapper {
+	@extend %wrapper;
+}
+
+$brown : #a69069;
+$blue:  #4a5b74;
+$dark: #1b1b1b;
+.button{
+	color:white;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: 13px;
+	font-family: 'Oxygen';
+	border: 2px solid $brown;
+	border-radius: 30px;
+	padding:15px 40px;
+	transition: all 0.3s ease;
+
+	&:hover{
+		background-color:$brown;
+	}
+}
+.button-content{
+	display: inline-block;
+	color:#484848;
+	text-decoration: none;
+	text-transform: capitalize;
+	font-weight: 700;
+	font-size: 14px;
+	font-family: 'Oxygen';
+	border: 2px solid $brown;
+	border-radius: 30px;
+	padding:15px 52px;
+	transition: all 0.3s ease;
+
+	&:hover{
+		background-color:$brown;
+		color:white;
+	}
+
+
+}
+
+@keyframes v-line {
+    from {top: -100%;}
+    to {top: 100%;}
+}
+
+@mixin media($size: 768px){
+	@media(max-width: $size){
+		@content
+	}
+}
